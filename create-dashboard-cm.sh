@@ -19,11 +19,11 @@ create_dashboard_cm() {
 NAMESPACE="prometheus" 
 
 create_dashboard_cm \
-  "Blackbox-exporter.json" \
+  "dashboards/Blackbox-exporter.json" \
   "blackbox-exporter-dashboard" \
   "$NAMESPACE"
 
 create_dashboard_cm \
-  "MSK.json" \
+  "dashboards/MSK.json" \
   "msk-dashboard" \
   "$NAMESPACE"

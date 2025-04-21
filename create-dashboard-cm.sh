@@ -27,3 +27,8 @@ create_dashboard_cm \
   "dashboards/MSK.json" \
   "msk-dashboard" \
   "$NAMESPACE"
+
+create_dashboard_cm \
+  "dashboards/Nginx-exporter.json" \
+  "nginx-exporter-dashboard" \
+  "$NAMESPACE"

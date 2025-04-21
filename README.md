@@ -15,6 +15,12 @@
     - Consumer Lags 지표 모니터링
     - Java Memory 모니터링
 
+2. **Nginx Exporter 대시보드**
+    - Nginx Exporter 상태
+    - 처리된 연결 수
+    - 활성/읽기/쓰기/대기 중인 연결 수
+    - 총 HTTP 요청 수
+
 <br>
 
 ## 배포 설정

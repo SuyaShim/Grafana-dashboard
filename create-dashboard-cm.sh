@@ -1,5 +1,7 @@
 #!/bin/bash
 
+NAMESPACE="prometheus" 
+
 create_dashboard_cm() {
   local file=$1
   local name=$2
@@ -16,8 +18,6 @@ create_dashboard_cm() {
     --namespace=$ns
 }
 
-NAMESPACE="prometheus" 
-
 create_dashboard_cm \
   "dashboards/Blackbox-exporter.json" \
   "blackbox-exporter-dashboard" \
@@ -31,4 +31,9 @@ create_dashboard_cm \
 create_dashboard_cm \
   "dashboards/Nginx-exporter.json" \
   "nginx-exporter-dashboard" \
+  "$NAMESPACE"
+
+  create_dashboard_cm \
+  "dashboards/Ingress-Nginx.json" \
+  "ingress-nginx-dashboard" \
   "$NAMESPACE"

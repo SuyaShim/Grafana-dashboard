@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAMESPACE="prometheus" 
+NAMESPACE="monitoring" 
 
 create_dashboard_cm() {
   local file=$1
@@ -18,22 +18,22 @@ create_dashboard_cm() {
     --namespace=$ns
 }
 
-create_dashboard_cm \
-  "dashboards/Blackbox-exporter.json" \
-  "blackbox-exporter-dashboard" \
-  "$NAMESPACE"
+# create_dashboard_cm \
+#   "dashboards/Blackbox-exporter.json" \
+#   "blackbox-exporter-dashboard" \
+#   "$NAMESPACE"
 
-create_dashboard_cm \
-  "dashboards/MSK.json" \
-  "msk-dashboard" \
-  "$NAMESPACE"
+# create_dashboard_cm \
+#   "dashboards/MSK.json" \
+#   "msk-dashboard" \
+#   "$NAMESPACE"
 
 create_dashboard_cm \
   "dashboards/Nginx-exporter.json" \
   "nginx-exporter-dashboard" \
   "$NAMESPACE"
 
-  create_dashboard_cm \
-  "dashboards/Ingress-Nginx.json" \
-  "ingress-nginx-dashboard" \
-  "$NAMESPACE"
+  # create_dashboard_cm \
+  # "dashboards/Ingress-Nginx.json" \
+  # "ingress-nginx-dashboard" \
+  # "$NAMESPACE"

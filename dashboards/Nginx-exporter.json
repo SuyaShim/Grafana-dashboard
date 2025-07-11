@@ -113,7 +113,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "P476764B7E465E4D8"
+            "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "nginx_up{instance=~\"$instance\"}",
@@ -513,7 +513,7 @@
           "value": "prometheus"
         },
         "includeAll": false,
-        "label": "datasource",
+        "label": "Data Source",
         "name": "DS_PROMETHEUS",
         "options": [],
         "query": "prometheus",

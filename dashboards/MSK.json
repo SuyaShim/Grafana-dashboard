@@ -26,7 +26,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 30,
+  "id": 38,
   "links": [],
   "panels": [
     {
@@ -4712,9 +4712,8 @@
           ]
         },
         "definition": "label_values(kafka_controller_ControllerStats_Count{job=\"msk\"},cluster_name)",
-        "includeAll": true,
+        "includeAll": false,
         "label": "Cluster",
-        "multi": true,
         "name": "cluster",
         "options": [],
         "query": {
